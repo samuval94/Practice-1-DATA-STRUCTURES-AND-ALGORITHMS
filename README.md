@@ -97,6 +97,7 @@ Process finished with exit code 0
 | 1°  | QuickSort | 120 - 335 ms   | 3125 KB |
 | 2° | AVL Tree  | 158 - 389 ms   | 5078 KB |
 | 3° | HeapSort  | 218 - 615 ms   | 3125 KB |
+
 El tiempo de ejecución puede cambiar dependiendo de las condiciones en las cuales se ejecute el programa. Entre más aplicaciones abiertas a la vez, la CPU reparte su tiempo en todos los procesos.
 
 ### 2. Por qué la complejidad teórica difiere de los resultados prácticos?
