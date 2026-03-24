@@ -28,7 +28,7 @@ El objetivo de este ejercicio es analizar cómo se comportan los distintos algor
 ```
 
 ---
-## Algorithms Implemented
+## Algoritmos Implementados
 
 ### A) QuickSort — `std::vector<string>`
 - Implementado desde cero, sin uso de std::sort.
