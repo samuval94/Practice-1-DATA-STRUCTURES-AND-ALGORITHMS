@@ -104,7 +104,7 @@ El tiempo de ejecución puede cambiar dependiendo de las condiciones en las cual
 
 Los tres algoritmos poseen la misma complejidad, **Big O — O(n log n) **, pero sus tiempos de ejecución difieren por la localidad del caché. Es decir, se diferencian en cómo acceder a los datos.
 - **QuickSort** opera sobre un `std::vector` contiguo en memoria, por lo que los accesos son secuenciales. El prefetcher del CPU maneja esto eficientemente, generando muy pocos cache misses.
-- **HeapSort** ccede a elementos en los índices `2i+1` y `2i+2`, lo que crea saltos no secuenciales en memoria. Estos saltos generan cache misses frecuentes, ralentizando la ejecución a pesar de tener la misma complejidad teórica.
+- **HeapSort** accede a elementos en los índices `2i+1` y `2i+2`, lo que crea saltos no secuenciales en memoria. Estos saltos generan cache misses frecuentes, ralentizando la ejecución a pesar de tener la misma complejidad teórica.
 - **AVL Tree** accede a nodos a través de punteros dispersos en el heap de memoria. Cada dereferenciacón de puntero puede causar un cache miss, sumado al overhead de las rotaciones necesarias para mantener el balance.
 
 La notación Big O mide el número de operaciones pero ignora efectos del hardware y patrones de acceso a memoria, por esto los resultados prácticos pueden diferir sustancialmente de la teoría.
